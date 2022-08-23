@@ -1,0 +1,1377 @@
+[2022-03-13T10:20:23.077] [ERROR] UserController - Error: users validation failed: id: Path `id` is required., originPassword: Path `originPassword` is required.
+    at ValidationError.inspect (D:\shopping_tool\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (internal/util/inspect.js:736:19)
+    at inspect (internal/util/inspect.js:310:10)
+    at formatWithOptionsInternal (internal/util/inspect.js:1969:40)
+    at Object.format (internal/util/inspect.js:1843:10)
+    at basicLayout (D:\shopping_tool\node_modules\log4js\lib\layouts.js:62:57)
+    at app (D:\shopping_tool\node_modules\log4js\lib\appenders\file.js:53:18)
+    at D:\shopping_tool\node_modules\log4js\lib\appenders\logLevelFilter.js:7:7
+    at D:\shopping_tool\node_modules\log4js\lib\log4js.js:42:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\shopping_tool\node_modules\log4js\lib\log4js.js:41:21)
+    at D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:26
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:13)
+    at Object.send (D:\shopping_tool\node_modules\log4js\lib\clustering.js:89:7)
+    at Logger._log (D:\shopping_tool\node_modules\log4js\lib\logger.js:90:16)
+    at Logger.log (D:\shopping_tool\node_modules\log4js\lib\logger.js:73:12)
+    at Logger.<computed> [as error] (D:\shopping_tool\node_modules\log4js\lib\logger.js:124:10)
+    at addNewUser (D:\shopping_tool\modules\users\usersController.ts:30:17)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  errors: {
+    id: ValidatorError: Path `id` is required.
+        at validate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1270:13)
+        at D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1253:7
+        at Array.forEach (<anonymous>)
+        at SchemaNumber.SchemaType.doValidate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1198:14)
+        at D:\shopping_tool\node_modules\mongoose\lib\document.js:2567:18
+        at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'id',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    originPassword: ValidatorError: Path `originPassword` is required.
+        at validate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1270:13)
+        at D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1253:7
+        at Array.forEach (<anonymous>)
+        at SchemaString.SchemaType.doValidate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1198:14)
+        at D:\shopping_tool\node_modules\mongoose\lib\document.js:2567:18
+        at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'originPassword',
+      value: '',
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'users validation failed'
+}
+[2022-03-13T10:22:42.693] [ERROR] UserController - Error: users validation failed: originPassword: Path `originPassword` is required.
+    at ValidationError.inspect (D:\shopping_tool\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (internal/util/inspect.js:736:19)
+    at inspect (internal/util/inspect.js:310:10)
+    at formatWithOptionsInternal (internal/util/inspect.js:1969:40)
+    at Object.format (internal/util/inspect.js:1843:10)
+    at basicLayout (D:\shopping_tool\node_modules\log4js\lib\layouts.js:62:57)
+    at app (D:\shopping_tool\node_modules\log4js\lib\appenders\file.js:53:18)
+    at D:\shopping_tool\node_modules\log4js\lib\appenders\logLevelFilter.js:7:7
+    at D:\shopping_tool\node_modules\log4js\lib\log4js.js:42:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\shopping_tool\node_modules\log4js\lib\log4js.js:41:21)
+    at D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:26
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:13)
+    at Object.send (D:\shopping_tool\node_modules\log4js\lib\clustering.js:89:7)
+    at Logger._log (D:\shopping_tool\node_modules\log4js\lib\logger.js:90:16)
+    at Logger.log (D:\shopping_tool\node_modules\log4js\lib\logger.js:73:12)
+    at Logger.<computed> [as error] (D:\shopping_tool\node_modules\log4js\lib\logger.js:124:10)
+    at addNewUser (D:\shopping_tool\modules\users\usersController.ts:30:17)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  errors: {
+    originPassword: ValidatorError: Path `originPassword` is required.
+        at validate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1270:13)
+        at D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1253:7
+        at Array.forEach (<anonymous>)
+        at SchemaString.SchemaType.doValidate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1198:14)
+        at D:\shopping_tool\node_modules\mongoose\lib\document.js:2567:18
+        at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'originPassword',
+      value: '',
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'users validation failed'
+}
+[2022-03-13T10:28:09.430] [ERROR] UserController - Invalid Params ID => 622d795efe7e28150458c82
+[2022-03-13T10:28:23.246] [ERROR] UserController - TypeError: Cannot read property 'companyId' of undefined
+    at updateUser (D:\shopping_tool\modules\users\usersController.ts:55:106)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\shopping_tool\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\shopping_tool\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:281:22
+    at param (D:\shopping_tool\node_modules\express\lib\router\index.js:360:14)
+    at param (D:\shopping_tool\node_modules\express\lib\router\index.js:371:14)
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:416:3)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\shopping_tool\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\shopping_tool\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\modules\users\index.ts:12:12
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+[2022-03-13T10:33:55.780] [ERROR] VenderController - Error: venders validation failed: id: Path `id` is required.
+    at ValidationError.inspect (D:\shopping_tool\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (internal/util/inspect.js:736:19)
+    at inspect (internal/util/inspect.js:310:10)
+    at formatWithOptionsInternal (internal/util/inspect.js:1969:40)
+    at Object.format (internal/util/inspect.js:1843:10)
+    at basicLayout (D:\shopping_tool\node_modules\log4js\lib\layouts.js:62:57)
+    at app (D:\shopping_tool\node_modules\log4js\lib\appenders\file.js:53:18)
+    at D:\shopping_tool\node_modules\log4js\lib\appenders\logLevelFilter.js:7:7
+    at D:\shopping_tool\node_modules\log4js\lib\log4js.js:42:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\shopping_tool\node_modules\log4js\lib\log4js.js:41:21)
+    at D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:26
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:13)
+    at Object.send (D:\shopping_tool\node_modules\log4js\lib\clustering.js:89:7)
+    at Logger._log (D:\shopping_tool\node_modules\log4js\lib\logger.js:90:16)
+    at Logger.log (D:\shopping_tool\node_modules\log4js\lib\logger.js:73:12)
+    at Logger.<computed> [as error] (D:\shopping_tool\node_modules\log4js\lib\logger.js:124:10)
+    at addNewVender (D:\shopping_tool\modules\venders\vendersController.ts:47:17)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  errors: {
+    id: ValidatorError: Path `id` is required.
+        at validate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1270:13)
+        at D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1253:7
+        at Array.forEach (<anonymous>)
+        at SchemaNumber.SchemaType.doValidate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1198:14)
+        at D:\shopping_tool\node_modules\mongoose\lib\document.js:2567:18
+        at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'id',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'venders validation failed'
+}
+[2022-03-13T10:59:14.417] [ERROR] VenderController - Error: addressDetails validation failed: venderId: Cast to Number failed for value "[]" (type Array) at path "venderId"
+    at ValidationError.inspect (D:\shopping_tool\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (internal/util/inspect.js:736:19)
+    at inspect (internal/util/inspect.js:310:10)
+    at formatWithOptionsInternal (internal/util/inspect.js:1969:40)
+    at Object.format (internal/util/inspect.js:1843:10)
+    at basicLayout (D:\shopping_tool\node_modules\log4js\lib\layouts.js:62:57)
+    at app (D:\shopping_tool\node_modules\log4js\lib\appenders\file.js:53:18)
+    at D:\shopping_tool\node_modules\log4js\lib\appenders\logLevelFilter.js:7:7
+    at D:\shopping_tool\node_modules\log4js\lib\log4js.js:42:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\shopping_tool\node_modules\log4js\lib\log4js.js:41:21)
+    at D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:26
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:13)
+    at Object.send (D:\shopping_tool\node_modules\log4js\lib\clustering.js:89:7)
+    at Logger._log (D:\shopping_tool\node_modules\log4js\lib\logger.js:90:16)
+    at Logger.log (D:\shopping_tool\node_modules\log4js\lib\logger.js:73:12)
+    at Logger.<computed> [as error] (D:\shopping_tool\node_modules\log4js\lib\logger.js:124:10)
+    at addNewVender (D:\shopping_tool\modules\venders\vendersController.ts:45:17)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  errors: {
+    venderId: CastError: Cast to Number failed for value "[]" (type Array) at path "venderId"
+        at SchemaNumber.cast (D:\shopping_tool\node_modules\mongoose\lib\schema\number.js:373:11)
+        at SchemaNumber.SchemaType.applySetters (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1123:12)
+        at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1309:20)
+        at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1070:14)
+        at model.Document (D:\shopping_tool\node_modules\mongoose\lib\document.js:148:12)
+        at model.Model (D:\shopping_tool\node_modules\mongoose\lib\model.js:106:12)
+        at new model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4911:15)
+        at model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4906:16)
+        at DBModel.insertRec (D:\shopping_tool\common\dbModel.ts:80:31)
+        at DBModel.create (D:\shopping_tool\common\dbModel.ts:312:53)
+        at AddressDetailModel.add (D:\shopping_tool\modules\addressDetails\addressDetailsModel.ts:32:41)
+        at addNewVender (D:\shopping_tool\modules\venders\vendersController.ts:28:59)
+        at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+      stringValue: '"[]"',
+      messageFormat: undefined,
+      kind: 'Number',
+      value: [],
+      path: 'venderId',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(false)
+      
+          at castNumber (D:\shopping_tool\node_modules\mongoose\lib\cast\number.js:42:10)
+          at SchemaNumber.cast (D:\shopping_tool\node_modules\mongoose\lib\schema\number.js:371:12)
+          at SchemaNumber.SchemaType.applySetters (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1123:12)
+          at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1309:20)
+          at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1070:14)
+          at model.Document (D:\shopping_tool\node_modules\mongoose\lib\document.js:148:12)
+          at model.Model (D:\shopping_tool\node_modules\mongoose\lib\model.js:106:12)
+          at new model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4911:15)
+          at model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4906:16)
+          at DBModel.insertRec (D:\shopping_tool\common\dbModel.ts:80:31)
+          at DBModel.create (D:\shopping_tool\common\dbModel.ts:312:53)
+          at AddressDetailModel.add (D:\shopping_tool\modules\addressDetails\addressDetailsModel.ts:32:41)
+          at addNewVender (D:\shopping_tool\modules\venders\vendersController.ts:28:59)
+          at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'Array'
+    }
+  },
+  _message: 'addressDetails validation failed'
+}
+[2022-03-13T11:00:03.324] [ERROR] VenderController - Error: addressDetails validation failed: venderId: Cast to string failed for value "[]" (type Array) at path "venderId"
+    at ValidationError.inspect (D:\shopping_tool\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (internal/util/inspect.js:736:19)
+    at inspect (internal/util/inspect.js:310:10)
+    at formatWithOptionsInternal (internal/util/inspect.js:1969:40)
+    at Object.format (internal/util/inspect.js:1843:10)
+    at basicLayout (D:\shopping_tool\node_modules\log4js\lib\layouts.js:62:57)
+    at app (D:\shopping_tool\node_modules\log4js\lib\appenders\file.js:53:18)
+    at D:\shopping_tool\node_modules\log4js\lib\appenders\logLevelFilter.js:7:7
+    at D:\shopping_tool\node_modules\log4js\lib\log4js.js:42:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\shopping_tool\node_modules\log4js\lib\log4js.js:41:21)
+    at D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:26
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:13)
+    at Object.send (D:\shopping_tool\node_modules\log4js\lib\clustering.js:89:7)
+    at Logger._log (D:\shopping_tool\node_modules\log4js\lib\logger.js:90:16)
+    at Logger.log (D:\shopping_tool\node_modules\log4js\lib\logger.js:73:12)
+    at Logger.<computed> [as error] (D:\shopping_tool\node_modules\log4js\lib\logger.js:124:10)
+    at addNewVender (D:\shopping_tool\modules\venders\vendersController.ts:45:17)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  errors: {
+    venderId: CastError: Cast to string failed for value "[]" (type Array) at path "venderId"
+        at SchemaString.cast (D:\shopping_tool\node_modules\mongoose\lib\schema\string.js:603:11)
+        at SchemaString.SchemaType.applySetters (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1123:12)
+        at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1309:20)
+        at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1070:14)
+        at model.Document (D:\shopping_tool\node_modules\mongoose\lib\document.js:148:12)
+        at model.Model (D:\shopping_tool\node_modules\mongoose\lib\model.js:106:12)
+        at new model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4911:15)
+        at model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4906:16)
+        at DBModel.insertRec (D:\shopping_tool\common\dbModel.ts:80:31)
+        at DBModel.create (D:\shopping_tool\common\dbModel.ts:312:53)
+        at AddressDetailModel.add (D:\shopping_tool\modules\addressDetails\addressDetailsModel.ts:32:41)
+        at addNewVender (D:\shopping_tool\modules\venders\vendersController.ts:28:59)
+        at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+      stringValue: '"[]"',
+      messageFormat: undefined,
+      kind: 'string',
+      value: [],
+      path: 'venderId',
+      reason: null,
+      valueType: 'Array'
+    }
+  },
+  _message: 'addressDetails validation failed'
+}
+[2022-03-13T11:00:59.007] [ERROR] VenderController - Error: addressDetails validation failed: venderId: Cast to string failed for value "[]" (type Array) at path "venderId"
+    at ValidationError.inspect (D:\shopping_tool\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (internal/util/inspect.js:736:19)
+    at inspect (internal/util/inspect.js:310:10)
+    at formatWithOptionsInternal (internal/util/inspect.js:1969:40)
+    at Object.format (internal/util/inspect.js:1843:10)
+    at basicLayout (D:\shopping_tool\node_modules\log4js\lib\layouts.js:62:57)
+    at app (D:\shopping_tool\node_modules\log4js\lib\appenders\file.js:53:18)
+    at D:\shopping_tool\node_modules\log4js\lib\appenders\logLevelFilter.js:7:7
+    at D:\shopping_tool\node_modules\log4js\lib\log4js.js:42:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\shopping_tool\node_modules\log4js\lib\log4js.js:41:21)
+    at D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:26
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:13)
+    at Object.send (D:\shopping_tool\node_modules\log4js\lib\clustering.js:89:7)
+    at Logger._log (D:\shopping_tool\node_modules\log4js\lib\logger.js:90:16)
+    at Logger.log (D:\shopping_tool\node_modules\log4js\lib\logger.js:73:12)
+    at Logger.<computed> [as error] (D:\shopping_tool\node_modules\log4js\lib\logger.js:124:10)
+    at addNewVender (D:\shopping_tool\modules\venders\vendersController.ts:45:17)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  errors: {
+    venderId: CastError: Cast to string failed for value "[]" (type Array) at path "venderId"
+        at SchemaString.cast (D:\shopping_tool\node_modules\mongoose\lib\schema\string.js:603:11)
+        at SchemaString.SchemaType.applySetters (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1123:12)
+        at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1309:20)
+        at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1070:14)
+        at model.Document (D:\shopping_tool\node_modules\mongoose\lib\document.js:148:12)
+        at model.Model (D:\shopping_tool\node_modules\mongoose\lib\model.js:106:12)
+        at new model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4911:15)
+        at model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4906:16)
+        at DBModel.insertRec (D:\shopping_tool\common\dbModel.ts:80:31)
+        at DBModel.create (D:\shopping_tool\common\dbModel.ts:312:53)
+        at AddressDetailModel.add (D:\shopping_tool\modules\addressDetails\addressDetailsModel.ts:32:41)
+        at addNewVender (D:\shopping_tool\modules\venders\vendersController.ts:28:59)
+        at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+      stringValue: '"[]"',
+      messageFormat: undefined,
+      kind: 'string',
+      value: [],
+      path: 'venderId',
+      reason: null,
+      valueType: 'Array'
+    }
+  },
+  _message: 'addressDetails validation failed'
+}
+[2022-03-13T11:02:07.541] [ERROR] VenderController - Error: addressDetails validation failed: venderId: Cast to string failed for value "[]" (type Array) at path "venderId"
+    at ValidationError.inspect (D:\shopping_tool\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (internal/util/inspect.js:736:19)
+    at inspect (internal/util/inspect.js:310:10)
+    at formatWithOptionsInternal (internal/util/inspect.js:1969:40)
+    at Object.format (internal/util/inspect.js:1843:10)
+    at basicLayout (D:\shopping_tool\node_modules\log4js\lib\layouts.js:62:57)
+    at app (D:\shopping_tool\node_modules\log4js\lib\appenders\file.js:53:18)
+    at D:\shopping_tool\node_modules\log4js\lib\appenders\logLevelFilter.js:7:7
+    at D:\shopping_tool\node_modules\log4js\lib\log4js.js:42:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\shopping_tool\node_modules\log4js\lib\log4js.js:41:21)
+    at D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:26
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:13)
+    at Object.send (D:\shopping_tool\node_modules\log4js\lib\clustering.js:89:7)
+    at Logger._log (D:\shopping_tool\node_modules\log4js\lib\logger.js:90:16)
+    at Logger.log (D:\shopping_tool\node_modules\log4js\lib\logger.js:73:12)
+    at Logger.<computed> [as error] (D:\shopping_tool\node_modules\log4js\lib\logger.js:124:10)
+    at addNewVender (D:\shopping_tool\modules\venders\vendersController.ts:45:17)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  errors: {
+    venderId: CastError: Cast to string failed for value "[]" (type Array) at path "venderId"
+        at SchemaString.cast (D:\shopping_tool\node_modules\mongoose\lib\schema\string.js:603:11)
+        at SchemaString.SchemaType.applySetters (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1123:12)
+        at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1309:20)
+        at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1070:14)
+        at model.Document (D:\shopping_tool\node_modules\mongoose\lib\document.js:148:12)
+        at model.Model (D:\shopping_tool\node_modules\mongoose\lib\model.js:106:12)
+        at new model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4911:15)
+        at model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4906:16)
+        at DBModel.insertRec (D:\shopping_tool\common\dbModel.ts:80:31)
+        at DBModel.create (D:\shopping_tool\common\dbModel.ts:312:53)
+        at AddressDetailModel.add (D:\shopping_tool\modules\addressDetails\addressDetailsModel.ts:32:41)
+        at addNewVender (D:\shopping_tool\modules\venders\vendersController.ts:28:59)
+        at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+      stringValue: '"[]"',
+      messageFormat: undefined,
+      kind: 'string',
+      value: [],
+      path: 'venderId',
+      reason: null,
+      valueType: 'Array'
+    }
+  },
+  _message: 'addressDetails validation failed'
+}
+[2022-03-13T11:04:18.621] [ERROR] VenderController - CastError: Cast to string failed for value "[]" (type Array) at path "storeAddressId"
+    at model.Query.exec (D:\shopping_tool\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\shopping_tool\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  messageFormat: undefined,
+  stringValue: '"[]"',
+  kind: 'string',
+  value: [],
+  path: 'storeAddressId',
+  reason: null,
+  valueType: 'Array'
+}
+[2022-03-14T18:44:49.995] [ERROR] Application - unhandledRejection Error: ⨯ Unable to compile TypeScript:
+[96mmodules/orders/index.ts[0m:[93m4[0m:[93m9[0m - [91merror[0m[90m TS2305: [0mModule '"../../common/authentication"' has no exported member 'AuthValidator'.
+
+[7m4[0m import {AuthValidator} from "../../common/authentication";
+[7m [0m [91m        ~~~~~~~~~~~~~[0m
+
+    at Object.<anonymous> (D:\shopping_tool\modules\orders\index.ts:1:7)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (D:\shopping_tool\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\admin\AppData\Local\Temp\ts-node-dev-hook-08405050193957608.js:69:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at require.extensions.<computed> (C:\Users\admin\AppData\Local\Temp\ts-node-dev-hook-08405050193957608.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\shopping_tool\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at D:\shopping_tool\modules\index.ts:18:41
+    at Array.forEach (<anonymous>)
+    at D:\shopping_tool\modules\index.ts:15:41
+    at Array.forEach (<anonymous>)
+    at AppMiddleware.enableRouting (D:\shopping_tool\modules\index.ts:12:35)
+    at new AppMiddleware (D:\shopping_tool\modules\index.ts:8:14)
+    at D:\shopping_tool\app.ts:40:60
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2022-03-14T18:50:28.756] [ERROR] Application - unhandledRejection Error: ⨯ Unable to compile TypeScript:
+[96mmodules/orders/index.ts[0m:[93m12[0m:[93m71[0m - [91merror[0m[90m TS2339: [0mProperty 'validate' does not exist on type 'typeof AuthValidator'.
+
+[7m12[0m router.use('/orders', connectLogger(log, loggerOptions),AuthValidator.validate, router);
+[7m  [0m [91m                                                                      ~~~~~~~~[0m
+
+    at Object.<anonymous> (D:\shopping_tool\modules\orders\index.ts:1:7)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (D:\shopping_tool\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\admin\AppData\Local\Temp\ts-node-dev-hook-22774037226324184.js:69:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at require.extensions.<computed> (C:\Users\admin\AppData\Local\Temp\ts-node-dev-hook-22774037226324184.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\shopping_tool\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at D:\shopping_tool\modules\index.ts:18:41
+    at Array.forEach (<anonymous>)
+    at D:\shopping_tool\modules\index.ts:15:41
+    at Array.forEach (<anonymous>)
+    at AppMiddleware.enableRouting (D:\shopping_tool\modules\index.ts:12:35)
+    at new AppMiddleware (D:\shopping_tool\modules\index.ts:8:14)
+    at D:\shopping_tool\app.ts:40:60
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2022-03-14T19:22:04.772] [ERROR] Application - unhandledRejection Error: ⨯ Unable to compile TypeScript:
+[96mmodules/vendors/index.ts[0m:[93m20[0m:[93m45[0m - [91merror[0m[90m TS2339: [0mProperty 'vendorLogin' does not exist on type 'VendorController'.
+
+[7m20[0m router.get('/authonicate', vendorController.vendorLogin);
+[7m  [0m [91m                                            ~~~~~~~~~~~[0m
+
+    at Object.<anonymous> (D:\shopping_tool\modules\vendors\index.ts:1:7)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (D:\shopping_tool\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\admin\AppData\Local\Temp\ts-node-dev-hook-862039617216805.js:69:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at require.extensions.<computed> (C:\Users\admin\AppData\Local\Temp\ts-node-dev-hook-862039617216805.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\shopping_tool\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at D:\shopping_tool\modules\index.ts:18:41
+    at Array.forEach (<anonymous>)
+    at D:\shopping_tool\modules\index.ts:15:41
+    at Array.forEach (<anonymous>)
+    at AppMiddleware.enableRouting (D:\shopping_tool\modules\index.ts:12:35)
+    at new AppMiddleware (D:\shopping_tool\modules\index.ts:8:14)
+    at D:\shopping_tool\app.ts:40:60
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2022-03-14T19:24:39.392] [ERROR] vendorController - TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at DBModel.find (D:\shopping_tool\common\dbModel.ts:203:24)
+    at vendorModel.findOne (D:\shopping_tool\modules\vendors\vendorsModel.ts:50:41)
+    at vendorLogin (D:\shopping_tool\modules\vendors\vendorsController.ts:66:44)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\shopping_tool\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\shopping_tool\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\shopping_tool\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\shopping_tool\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\modules\vendors\index.ts:14:12
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+[2022-03-14T19:25:31.930] [ERROR] vendorController - TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at DBModel.find (D:\shopping_tool\common\dbModel.ts:203:24)
+    at vendorModel.findOne (D:\shopping_tool\modules\vendors\vendorsModel.ts:50:41)
+    at vendorLogin (D:\shopping_tool\modules\vendors\vendorsController.ts:66:44)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\shopping_tool\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\shopping_tool\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\shopping_tool\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\shopping_tool\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\modules\vendors\index.ts:14:12
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+[2022-03-14T19:26:25.430] [ERROR] vendorController - TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at DBModel.find (D:\shopping_tool\common\dbModel.ts:203:24)
+    at vendorModel.findOne (D:\shopping_tool\modules\vendors\vendorsModel.ts:50:41)
+    at vendorLogin (D:\shopping_tool\modules\vendors\vendorsController.ts:67:44)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\shopping_tool\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\shopping_tool\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\shopping_tool\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\shopping_tool\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\modules\vendors\index.ts:14:12
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+[2022-03-14T19:26:26.617] [ERROR] vendorController - TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at DBModel.find (D:\shopping_tool\common\dbModel.ts:203:24)
+    at vendorModel.findOne (D:\shopping_tool\modules\vendors\vendorsModel.ts:50:41)
+    at vendorLogin (D:\shopping_tool\modules\vendors\vendorsController.ts:67:44)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\shopping_tool\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\shopping_tool\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\shopping_tool\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\shopping_tool\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\modules\vendors\index.ts:14:12
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+[2022-03-14T19:27:38.197] [ERROR] Application - unhandledRejection Error: ⨯ Unable to compile TypeScript:
+[96mmodules/vendors/vendorsController.ts[0m:[93m65[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'reqHeaderObj'.
+
+[7m65[0m             console.log(reqHeaderObj")
+[7m  [0m [91m                        ~~~~~~~~~~~~[0m
+[96mmodules/vendors/vendorsController.ts[0m:[93m66[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'let'.
+
+[7m66[0m             let reqHeaderObj: any = req.headers;
+[7m  [0m [91m            ~~~[0m
+[96mmodules/vendors/vendorsController.ts[0m:[93m66[0m:[93m17[0m - [91merror[0m[90m TS2304: [0mCannot find name 'reqHeaderObj'.
+
+[7m66[0m             let reqHeaderObj: any = req.headers;
+[7m  [0m [91m                ~~~~~~~~~~~~[0m
+[96mmodules/vendors/vendorsController.ts[0m:[93m66[0m:[93m31[0m - [91merror[0m[90m TS2693: [0m'any' only refers to a type, but is being used as a value here.
+
+[7m66[0m             let reqHeaderObj: any = req.headers;
+[7m  [0m [91m                              ~~~[0m
+[96mmodules/vendors/vendorsController.ts[0m:[93m67[0m:[93m63[0m - [91merror[0m[90m TS2304: [0mCannot find name 'reqHeaderObj'.
+
+[7m67[0m             const vendorObj = await vendor.findOne({ 'email': reqHeaderObj.email.toLowerCase() }, 'firstName, lastName, email, mobile, password, storeName, storeGSTIN, status');
+[7m  [0m [91m                                                              ~~~~~~~~~~~~[0m
+[96mmodules/vendors/vendorsController.ts[0m:[93m68[0m:[93m77[0m - [91merror[0m[90m TS2304: [0mCannot find name 'reqHeaderObj'.
+
+[7m68[0m             if (vendorObj && vendorObj.status == CONFIG.STATUS['Active'] && reqHeaderObj.password && commonFunctions.getHashValue(reqHeaderObj.password) === vendorObj.password) {
+[7m  [0m [91m                                                                            ~~~~~~~~~~~~[0m
+[96mmodules/vendors/vendorsController.ts[0m:[93m68[0m:[93m131[0m - [91merror[0m[90m TS2304: [0mCannot find name 'reqHeaderObj'.
+
+[7m68[0m             if (vendorObj && vendorObj.status == CONFIG.STATUS['Active'] && reqHeaderObj.password && commonFunctions.getHashValue(reqHeaderObj.password) === vendorObj.password) {
+[7m  [0m [91m                                                                                                                                  ~~~~~~~~~~~~[0m
+[96mmodules/vendors/vendorsController.ts[0m:[93m65[0m:[93m39[0m - [91merror[0m[90m TS1002: [0mUnterminated string literal.
+
+[7m65[0m             console.log(reqHeaderObj")
+[7m  [0m [91m                                      [0m
+[96mmodules/vendors/vendorsController.ts[0m:[93m65[0m:[93m37[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m65[0m             console.log(reqHeaderObj")
+[7m  [0m [91m                                    ~~[0m
+[96mmodules/vendors/vendorsController.ts[0m:[93m66[0m:[93m13[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m66[0m             let reqHeaderObj: any = req.headers;
+[7m  [0m [91m            ~~~[0m
+[96mmodules/vendors/vendorsController.ts[0m:[93m66[0m:[93m17[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m66[0m             let reqHeaderObj: any = req.headers;
+[7m  [0m [91m                ~~~~~~~~~~~~[0m
+[96mmodules/vendors/vendorsController.ts[0m:[93m66[0m:[93m29[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m66[0m             let reqHeaderObj: any = req.headers;
+[7m  [0m [91m                            ~[0m
+[96mmodules/vendors/vendorsController.ts[0m:[93m66[0m:[93m48[0m - [91merror[0m[90m TS1005: [0m')' expected.
+
+[7m66[0m             let reqHeaderObj: any = req.headers;
+[7m  [0m [91m                                               ~[0m
+
+    at Object.<anonymous> (D:\shopping_tool\modules\vendors\vendorsController.ts:1:7)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (D:\shopping_tool\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\admin\AppData\Local\Temp\ts-node-dev-hook-5239993219204133.js:69:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at require.extensions.<computed> (C:\Users\admin\AppData\Local\Temp\ts-node-dev-hook-5239993219204133.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\shopping_tool\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\shopping_tool\modules\vendors\index.ts:3:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (D:\shopping_tool\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\admin\AppData\Local\Temp\ts-node-dev-hook-5239993219204133.js:69:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at require.extensions.<computed> (C:\Users\admin\AppData\Local\Temp\ts-node-dev-hook-5239993219204133.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\shopping_tool\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+[2022-03-14T19:27:40.562] [ERROR] Application - unhandledRejection Error: ⨯ Unable to compile TypeScript:
+[96mmodules/vendors/vendorsController.ts[0m:[93m65[0m:[93m25[0m - [91merror[0m[90m TS2448: [0mBlock-scoped variable 'reqHeaderObj' used before its declaration.
+
+[7m65[0m             console.log(reqHeaderObj)
+[7m  [0m [91m                        ~~~~~~~~~~~~[0m
+
+  [96mmodules/vendors/vendorsController.ts[0m:[93m66[0m:[93m17[0m
+    [7m66[0m             let reqHeaderObj: any = req.headers;
+    [7m  [0m [96m                ~~~~~~~~~~~~[0m
+    'reqHeaderObj' is declared here.
+
+    at Object.<anonymous> (D:\shopping_tool\modules\vendors\vendorsController.ts:1:7)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (D:\shopping_tool\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\admin\AppData\Local\Temp\ts-node-dev-hook-5239993219204133.js:69:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at require.extensions.<computed> (C:\Users\admin\AppData\Local\Temp\ts-node-dev-hook-5239993219204133.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\shopping_tool\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\shopping_tool\modules\vendors\index.ts:3:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (D:\shopping_tool\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\admin\AppData\Local\Temp\ts-node-dev-hook-5239993219204133.js:69:33)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at require.extensions.<computed> (C:\Users\admin\AppData\Local\Temp\ts-node-dev-hook-5239993219204133.js:71:20)
+    at Object.nodeDevHook [as .ts] (D:\shopping_tool\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+[2022-03-14T19:28:00.657] [ERROR] vendorController - TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at DBModel.find (D:\shopping_tool\common\dbModel.ts:203:24)
+    at vendorModel.findOne (D:\shopping_tool\modules\vendors\vendorsModel.ts:50:41)
+    at vendorLogin (D:\shopping_tool\modules\vendors\vendorsController.ts:68:44)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\shopping_tool\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\shopping_tool\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\shopping_tool\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\shopping_tool\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\modules\vendors\index.ts:14:12
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+[2022-03-14T19:28:44.701] [ERROR] vendorController - TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at DBModel.find (D:\shopping_tool\common\dbModel.ts:203:24)
+    at vendorModel.findOne (D:\shopping_tool\modules\vendors\vendorsModel.ts:50:41)
+    at vendorLogin (D:\shopping_tool\modules\vendors\vendorsController.ts:68:44)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\shopping_tool\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\shopping_tool\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\shopping_tool\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\shopping_tool\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\modules\vendors\index.ts:14:12
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+[2022-03-14T19:29:56.937] [ERROR] vendorController - TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at DBModel.find (D:\shopping_tool\common\dbModel.ts:203:24)
+    at vendorModel.findOne (D:\shopping_tool\modules\vendors\vendorsModel.ts:52:41)
+    at vendorLogin (D:\shopping_tool\modules\vendors\vendorsController.ts:68:44)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\shopping_tool\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\shopping_tool\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\shopping_tool\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\shopping_tool\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\modules\vendors\index.ts:14:12
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+[2022-03-14T19:42:01.147] [ERROR] ProductController - Error: products validation failed: vendorId: Path `vendorId` is required.
+    at ValidationError.inspect (D:\shopping_tool\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (internal/util/inspect.js:736:19)
+    at inspect (internal/util/inspect.js:310:10)
+    at formatWithOptionsInternal (internal/util/inspect.js:1969:40)
+    at Object.format (internal/util/inspect.js:1843:10)
+    at basicLayout (D:\shopping_tool\node_modules\log4js\lib\layouts.js:62:57)
+    at app (D:\shopping_tool\node_modules\log4js\lib\appenders\file.js:53:18)
+    at D:\shopping_tool\node_modules\log4js\lib\appenders\logLevelFilter.js:7:7
+    at D:\shopping_tool\node_modules\log4js\lib\log4js.js:42:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\shopping_tool\node_modules\log4js\lib\log4js.js:41:21)
+    at D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:26
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:13)
+    at Object.send (D:\shopping_tool\node_modules\log4js\lib\clustering.js:89:7)
+    at Logger._log (D:\shopping_tool\node_modules\log4js\lib\logger.js:90:16)
+    at Logger.log (D:\shopping_tool\node_modules\log4js\lib\logger.js:73:12)
+    at Logger.<computed> [as error] (D:\shopping_tool\node_modules\log4js\lib\logger.js:124:10)
+    at addNewProduct (D:\shopping_tool\modules\products\productsController.ts:17:17)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  errors: {
+    vendorId: ValidatorError: Path `vendorId` is required.
+        at validate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1270:13)
+        at D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1253:7
+        at Array.forEach (<anonymous>)
+        at SchemaNumber.SchemaType.doValidate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1198:14)
+        at D:\shopping_tool\node_modules\mongoose\lib\document.js:2567:18
+        at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'vendorId',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'products validation failed'
+}
+[2022-03-14T19:43:22.861] [ERROR] vendorController - TypeError: Cannot read property '_id' of undefined
+    at addNewProduct (D:\shopping_tool\modules\vendors\vendorsController.ts:85:53)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\shopping_tool\node_modules\express\lib\router\route.js:137:13)
+    at validate (D:\shopping_tool\common\authentication.ts:18:20)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2022-03-14T19:46:13.062] [ERROR] vendorController - Error: products validation failed: vendorId: Cast to Number failed for value "622f48dc96d1df15fc9ad215" (type string) at path "vendorId"
+    at ValidationError.inspect (D:\shopping_tool\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (internal/util/inspect.js:736:19)
+    at inspect (internal/util/inspect.js:310:10)
+    at formatWithOptionsInternal (internal/util/inspect.js:1969:40)
+    at Object.format (internal/util/inspect.js:1843:10)
+    at basicLayout (D:\shopping_tool\node_modules\log4js\lib\layouts.js:62:57)
+    at app (D:\shopping_tool\node_modules\log4js\lib\appenders\file.js:53:18)
+    at D:\shopping_tool\node_modules\log4js\lib\appenders\logLevelFilter.js:7:7
+    at D:\shopping_tool\node_modules\log4js\lib\log4js.js:42:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\shopping_tool\node_modules\log4js\lib\log4js.js:41:21)
+    at D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:26
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:13)
+    at Object.send (D:\shopping_tool\node_modules\log4js\lib\clustering.js:89:7)
+    at Logger._log (D:\shopping_tool\node_modules\log4js\lib\logger.js:90:16)
+    at Logger.log (D:\shopping_tool\node_modules\log4js\lib\logger.js:73:12)
+    at Logger.<computed> [as error] (D:\shopping_tool\node_modules\log4js\lib\logger.js:124:10)
+    at addNewProduct (D:\shopping_tool\modules\vendors\vendorsController.ts:89:17)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  errors: {
+    vendorId: CastError: Cast to Number failed for value "622f48dc96d1df15fc9ad215" (type string) at path "vendorId"
+        at SchemaNumber.cast (D:\shopping_tool\node_modules\mongoose\lib\schema\number.js:373:11)
+        at SchemaNumber.SchemaType.applySetters (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1123:12)
+        at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1309:20)
+        at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1070:14)
+        at model.Document (D:\shopping_tool\node_modules\mongoose\lib\document.js:148:12)
+        at model.Model (D:\shopping_tool\node_modules\mongoose\lib\model.js:106:12)
+        at new model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4911:15)
+        at model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4906:16)
+        at DBModel.insertRec (D:\shopping_tool\common\dbModel.ts:80:31)
+        at DBModel.create (D:\shopping_tool\common\dbModel.ts:303:53)
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at ProductModel.add (D:\shopping_tool\modules\products\productsModel.ts:34:20)
+        at addNewProduct (D:\shopping_tool\modules\vendors\vendorsController.ts:86:33) {
+      stringValue: '"622f48dc96d1df15fc9ad215"',
+      messageFormat: undefined,
+      kind: 'Number',
+      value: '622f48dc96d1df15fc9ad215',
+      path: 'vendorId',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(!isNaN(val))
+      
+          at castNumber (D:\shopping_tool\node_modules\mongoose\lib\cast\number.js:28:10)
+          at SchemaNumber.cast (D:\shopping_tool\node_modules\mongoose\lib\schema\number.js:371:12)
+          at SchemaNumber.SchemaType.applySetters (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1123:12)
+          at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1309:20)
+          at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1070:14)
+          at model.Document (D:\shopping_tool\node_modules\mongoose\lib\document.js:148:12)
+          at model.Model (D:\shopping_tool\node_modules\mongoose\lib\model.js:106:12)
+          at new model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4911:15)
+          at model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4906:16)
+          at DBModel.insertRec (D:\shopping_tool\common\dbModel.ts:80:31)
+          at DBModel.create (D:\shopping_tool\common\dbModel.ts:303:53)
+          at processTicksAndRejections (internal/process/task_queues.js:95:5)
+          at ProductModel.add (D:\shopping_tool\modules\products\productsModel.ts:34:20)
+          at addNewProduct (D:\shopping_tool\modules\vendors\vendorsController.ts:86:33) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'products validation failed'
+}
+[2022-03-14T19:47:03.750] [ERROR] vendorController - Error: products validation failed: vendorId: Cast to Number failed for value "622f48dc96d1df15fc9ad215" (type string) at path "vendorId"
+    at ValidationError.inspect (D:\shopping_tool\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (internal/util/inspect.js:736:19)
+    at inspect (internal/util/inspect.js:310:10)
+    at formatWithOptionsInternal (internal/util/inspect.js:1969:40)
+    at Object.format (internal/util/inspect.js:1843:10)
+    at basicLayout (D:\shopping_tool\node_modules\log4js\lib\layouts.js:62:57)
+    at app (D:\shopping_tool\node_modules\log4js\lib\appenders\file.js:53:18)
+    at D:\shopping_tool\node_modules\log4js\lib\appenders\logLevelFilter.js:7:7
+    at D:\shopping_tool\node_modules\log4js\lib\log4js.js:42:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\shopping_tool\node_modules\log4js\lib\log4js.js:41:21)
+    at D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:26
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:13)
+    at Object.send (D:\shopping_tool\node_modules\log4js\lib\clustering.js:89:7)
+    at Logger._log (D:\shopping_tool\node_modules\log4js\lib\logger.js:90:16)
+    at Logger.log (D:\shopping_tool\node_modules\log4js\lib\logger.js:73:12)
+    at Logger.<computed> [as error] (D:\shopping_tool\node_modules\log4js\lib\logger.js:124:10)
+    at addNewProduct (D:\shopping_tool\modules\vendors\vendorsController.ts:89:17)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  errors: {
+    vendorId: CastError: Cast to Number failed for value "622f48dc96d1df15fc9ad215" (type string) at path "vendorId"
+        at SchemaNumber.cast (D:\shopping_tool\node_modules\mongoose\lib\schema\number.js:373:11)
+        at SchemaNumber.SchemaType.applySetters (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1123:12)
+        at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1309:20)
+        at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1070:14)
+        at model.Document (D:\shopping_tool\node_modules\mongoose\lib\document.js:148:12)
+        at model.Model (D:\shopping_tool\node_modules\mongoose\lib\model.js:106:12)
+        at new model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4911:15)
+        at model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4906:16)
+        at DBModel.insertRec (D:\shopping_tool\common\dbModel.ts:80:31)
+        at DBModel.create (D:\shopping_tool\common\dbModel.ts:303:53)
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at ProductModel.add (D:\shopping_tool\modules\products\productsModel.ts:34:20)
+        at addNewProduct (D:\shopping_tool\modules\vendors\vendorsController.ts:86:33) {
+      stringValue: '"622f48dc96d1df15fc9ad215"',
+      messageFormat: undefined,
+      kind: 'Number',
+      value: '622f48dc96d1df15fc9ad215',
+      path: 'vendorId',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(!isNaN(val))
+      
+          at castNumber (D:\shopping_tool\node_modules\mongoose\lib\cast\number.js:28:10)
+          at SchemaNumber.cast (D:\shopping_tool\node_modules\mongoose\lib\schema\number.js:371:12)
+          at SchemaNumber.SchemaType.applySetters (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1123:12)
+          at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1309:20)
+          at model.$set (D:\shopping_tool\node_modules\mongoose\lib\document.js:1070:14)
+          at model.Document (D:\shopping_tool\node_modules\mongoose\lib\document.js:148:12)
+          at model.Model (D:\shopping_tool\node_modules\mongoose\lib\model.js:106:12)
+          at new model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4911:15)
+          at model (D:\shopping_tool\node_modules\mongoose\lib\model.js:4906:16)
+          at DBModel.insertRec (D:\shopping_tool\common\dbModel.ts:80:31)
+          at DBModel.create (D:\shopping_tool\common\dbModel.ts:303:53)
+          at processTicksAndRejections (internal/process/task_queues.js:95:5)
+          at ProductModel.add (D:\shopping_tool\modules\products\productsModel.ts:34:20)
+          at addNewProduct (D:\shopping_tool\modules\vendors\vendorsController.ts:86:33) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'products validation failed'
+}
+[2022-03-23T15:26:02.410] [ERROR] UserController - Error: users validation failed: originPassword: Path `originPassword` is required.
+    at ValidationError.inspect (D:\shopping_tool\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (internal/util/inspect.js:736:19)
+    at inspect (internal/util/inspect.js:310:10)
+    at formatWithOptionsInternal (internal/util/inspect.js:1969:40)
+    at Object.format (internal/util/inspect.js:1843:10)
+    at basicLayout (D:\shopping_tool\node_modules\log4js\lib\layouts.js:62:57)
+    at app (D:\shopping_tool\node_modules\log4js\lib\appenders\file.js:53:18)
+    at D:\shopping_tool\node_modules\log4js\lib\appenders\logLevelFilter.js:7:7
+    at D:\shopping_tool\node_modules\log4js\lib\log4js.js:42:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\shopping_tool\node_modules\log4js\lib\log4js.js:41:21)
+    at D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:26
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:13)
+    at Object.send (D:\shopping_tool\node_modules\log4js\lib\clustering.js:89:7)
+    at Logger._log (D:\shopping_tool\node_modules\log4js\lib\logger.js:90:16)
+    at Logger.log (D:\shopping_tool\node_modules\log4js\lib\logger.js:73:12)
+    at Logger.<computed> [as error] (D:\shopping_tool\node_modules\log4js\lib\logger.js:124:10)
+    at addNewUser (D:\shopping_tool\modules\users\usersController.ts:37:17)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  errors: {
+    originPassword: ValidatorError: Path `originPassword` is required.
+        at validate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1270:13)
+        at D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1253:7
+        at Array.forEach (<anonymous>)
+        at SchemaString.SchemaType.doValidate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1198:14)
+        at D:\shopping_tool\node_modules\mongoose\lib\document.js:2567:18
+        at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'originPassword',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'users validation failed'
+}
+[2022-03-23T15:41:00.919] [ERROR] UserController - Error: users validation failed: originPassword: Path `originPassword` is required.
+    at ValidationError.inspect (D:\shopping_tool\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (internal/util/inspect.js:736:19)
+    at inspect (internal/util/inspect.js:310:10)
+    at formatWithOptionsInternal (internal/util/inspect.js:1969:40)
+    at Object.format (internal/util/inspect.js:1843:10)
+    at basicLayout (D:\shopping_tool\node_modules\log4js\lib\layouts.js:62:57)
+    at app (D:\shopping_tool\node_modules\log4js\lib\appenders\file.js:53:18)
+    at D:\shopping_tool\node_modules\log4js\lib\appenders\logLevelFilter.js:7:7
+    at D:\shopping_tool\node_modules\log4js\lib\log4js.js:42:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\shopping_tool\node_modules\log4js\lib\log4js.js:41:21)
+    at D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:26
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:13)
+    at Object.send (D:\shopping_tool\node_modules\log4js\lib\clustering.js:89:7)
+    at Logger._log (D:\shopping_tool\node_modules\log4js\lib\logger.js:90:16)
+    at Logger.log (D:\shopping_tool\node_modules\log4js\lib\logger.js:73:12)
+    at Logger.<computed> [as error] (D:\shopping_tool\node_modules\log4js\lib\logger.js:124:10)
+    at addNewUser (D:\shopping_tool\modules\users\usersController.ts:37:17)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  errors: {
+    originPassword: ValidatorError: Path `originPassword` is required.
+        at validate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1270:13)
+        at D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1253:7
+        at Array.forEach (<anonymous>)
+        at SchemaString.SchemaType.doValidate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1198:14)
+        at D:\shopping_tool\node_modules\mongoose\lib\document.js:2567:18
+        at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'originPassword',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'users validation failed'
+}
+[2022-03-23T15:58:10.574] [ERROR] UserController - Error: users validation failed: originPassword: Path `originPassword` is required., mobile: Path `mobile` is required., lastName: Path `lastName` is required., firstName: Path `firstName` is required.
+    at ValidationError.inspect (D:\shopping_tool\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (internal/util/inspect.js:736:19)
+    at inspect (internal/util/inspect.js:310:10)
+    at formatWithOptionsInternal (internal/util/inspect.js:1969:40)
+    at Object.format (internal/util/inspect.js:1843:10)
+    at basicLayout (D:\shopping_tool\node_modules\log4js\lib\layouts.js:62:57)
+    at app (D:\shopping_tool\node_modules\log4js\lib\appenders\file.js:53:18)
+    at D:\shopping_tool\node_modules\log4js\lib\appenders\logLevelFilter.js:7:7
+    at D:\shopping_tool\node_modules\log4js\lib\log4js.js:42:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\shopping_tool\node_modules\log4js\lib\log4js.js:41:21)
+    at D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:26
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:13)
+    at Object.send (D:\shopping_tool\node_modules\log4js\lib\clustering.js:89:7)
+    at Logger._log (D:\shopping_tool\node_modules\log4js\lib\logger.js:90:16)
+    at Logger.log (D:\shopping_tool\node_modules\log4js\lib\logger.js:73:12)
+    at Logger.<computed> [as error] (D:\shopping_tool\node_modules\log4js\lib\logger.js:124:10)
+    at addNewUser (D:\shopping_tool\modules\users\usersController.ts:37:17)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  errors: {
+    originPassword: ValidatorError: Path `originPassword` is required.
+        at validate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1270:13)
+        at D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1253:7
+        at Array.forEach (<anonymous>)
+        at SchemaString.SchemaType.doValidate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1198:14)
+        at D:\shopping_tool\node_modules\mongoose\lib\document.js:2567:18
+        at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'originPassword',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    mobile: ValidatorError: Path `mobile` is required.
+        at validate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1270:13)
+        at D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1253:7
+        at Array.forEach (<anonymous>)
+        at SchemaString.SchemaType.doValidate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1198:14)
+        at D:\shopping_tool\node_modules\mongoose\lib\document.js:2567:18
+        at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'mobile',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    lastName: ValidatorError: Path `lastName` is required.
+        at validate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1270:13)
+        at D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1253:7
+        at Array.forEach (<anonymous>)
+        at SchemaString.SchemaType.doValidate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1198:14)
+        at D:\shopping_tool\node_modules\mongoose\lib\document.js:2567:18
+        at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'lastName',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    firstName: ValidatorError: Path `firstName` is required.
+        at validate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1270:13)
+        at D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1253:7
+        at Array.forEach (<anonymous>)
+        at SchemaString.SchemaType.doValidate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1198:14)
+        at D:\shopping_tool\node_modules\mongoose\lib\document.js:2567:18
+        at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'firstName',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'users validation failed'
+}
+[2022-03-23T16:05:50.637] [ERROR] UserController - TypeError: Cannot read property 'toLowerCase' of undefined
+    at userLogin (D:\shopping_tool\modules\users\usersController.ts:97:79)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\shopping_tool\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\shopping_tool\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\shopping_tool\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\shopping_tool\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\modules\users\index.ts:12:12
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\node_modules\log4js\lib\connect-logger.js:300:12
+[2022-03-23T16:08:43.599] [ERROR] UserController - TypeError: Cannot read property 'toLowerCase' of undefined
+    at userLogin (D:\shopping_tool\modules\users\usersController.ts:97:79)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\shopping_tool\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\shopping_tool\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\shopping_tool\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\shopping_tool\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\modules\users\index.ts:12:12
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\node_modules\log4js\lib\connect-logger.js:300:12
+[2022-03-23T16:11:08.476] [ERROR] UserController - TypeError: Cannot read property 'toLowerCase' of undefined
+    at userLogin (D:\shopping_tool\modules\users\usersController.ts:97:79)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\shopping_tool\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\shopping_tool\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\shopping_tool\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\shopping_tool\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\modules\users\index.ts:12:12
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\node_modules\log4js\lib\connect-logger.js:300:12
+[2022-03-23T16:25:14.339] [ERROR] UserController - TypeError: Cannot read property 'toLowerCase' of undefined
+    at userLogin (D:\shopping_tool\modules\users\usersController.ts:97:79)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\shopping_tool\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\shopping_tool\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\shopping_tool\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\shopping_tool\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\modules\users\index.ts:12:12
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\node_modules\log4js\lib\connect-logger.js:300:12
+[2022-03-23T16:28:20.397] [ERROR] UserController - TypeError: Cannot read property 'toLowerCase' of undefined
+    at userLogin (D:\shopping_tool\modules\users\usersController.ts:97:79)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\shopping_tool\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\shopping_tool\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\shopping_tool\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\shopping_tool\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\modules\users\index.ts:12:12
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\node_modules\log4js\lib\connect-logger.js:300:12
+[2022-03-23T16:30:07.039] [ERROR] UserController - TypeError: Cannot read property 'toLowerCase' of undefined
+    at userLogin (D:\shopping_tool\modules\users\usersController.ts:97:79)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\shopping_tool\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\shopping_tool\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\shopping_tool\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\shopping_tool\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\modules\users\index.ts:12:12
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\node_modules\log4js\lib\connect-logger.js:300:12
+[2022-03-23T16:34:35.413] [ERROR] UserController - TypeError: Cannot read property 'toLowerCase' of undefined
+    at userLogin (D:\shopping_tool\modules\users\usersController.ts:97:79)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\shopping_tool\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\shopping_tool\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\shopping_tool\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\shopping_tool\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\modules\users\index.ts:12:12
+    at Layer.handle [as handle_request] (D:\shopping_tool\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\shopping_tool\node_modules\express\lib\router\index.js:323:13)
+    at D:\shopping_tool\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\shopping_tool\node_modules\express\lib\router\index.js:341:12)
+    at next (D:\shopping_tool\node_modules\express\lib\router\index.js:275:10)
+    at D:\shopping_tool\node_modules\log4js\lib\connect-logger.js:300:12
+[2022-07-08T16:59:09.613] [ERROR] vendorController - Error: vendors validation failed: storeAddressProof: Path `storeAddressProof` is required.
+    at ValidationError.inspect (D:\shopping_tool\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (internal/util/inspect.js:736:19)
+    at inspect (internal/util/inspect.js:310:10)
+    at formatWithOptionsInternal (internal/util/inspect.js:1969:40)
+    at Object.format (internal/util/inspect.js:1843:10)
+    at basicLayout (D:\shopping_tool\node_modules\log4js\lib\layouts.js:62:57)
+    at app (D:\shopping_tool\node_modules\log4js\lib\appenders\file.js:53:18)
+    at D:\shopping_tool\node_modules\log4js\lib\appenders\logLevelFilter.js:7:7
+    at D:\shopping_tool\node_modules\log4js\lib\log4js.js:42:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\shopping_tool\node_modules\log4js\lib\log4js.js:41:21)
+    at D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:26
+    at Array.forEach (<anonymous>)
+    at sendToListeners (D:\shopping_tool\node_modules\log4js\lib\clustering.js:23:13)
+    at Object.send (D:\shopping_tool\node_modules\log4js\lib\clustering.js:89:7)
+    at Logger._log (D:\shopping_tool\node_modules\log4js\lib\logger.js:90:16)
+    at Logger.log (D:\shopping_tool\node_modules\log4js\lib\logger.js:73:12)
+    at Logger.<computed> [as error] (D:\shopping_tool\node_modules\log4js\lib\logger.js:124:10)
+    at addNewVendor (D:\shopping_tool\modules\vendors\vendorsController.ts:53:17)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  errors: {
+    storeAddressProof: ValidatorError: Path `storeAddressProof` is required.
+        at validate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1270:13)
+        at D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1253:7
+        at Array.forEach (<anonymous>)
+        at SchemaString.SchemaType.doValidate (D:\shopping_tool\node_modules\mongoose\lib\schematype.js:1198:14)
+        at D:\shopping_tool\node_modules\mongoose\lib\document.js:2567:18
+        at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'storeAddressProof',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'vendors validation failed'
+}
+[2022-07-08T17:01:54.998] [ERROR] vendorController - CastError: Cast to string failed for value "[]" (type Array) at path "storeAddressId"
+    at model.Query.exec (D:\shopping_tool\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\shopping_tool\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  messageFormat: undefined,
+  stringValue: '"[]"',
+  kind: 'string',
+  value: [],
+  path: 'storeAddressId',
+  reason: null,
+  valueType: 'Array'
+}
+[2022-07-08T17:03:59.222] [ERROR] vendorController - CastError: Cast to string failed for value "[]" (type Array) at path "storeAddressId"
+    at model.Query.exec (D:\shopping_tool\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\shopping_tool\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  messageFormat: undefined,
+  stringValue: '"[]"',
+  kind: 'string',
+  value: [],
+  path: 'storeAddressId',
+  reason: null,
+  valueType: 'Array'
+}
+[2022-07-08T17:05:04.570] [ERROR] vendorController - CastError: Cast to string failed for value "[]" (type Array) at path "storeAddressId"
+    at model.Query.exec (D:\shopping_tool\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\shopping_tool\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  messageFormat: undefined,
+  stringValue: '"[]"',
+  kind: 'string',
+  value: [],
+  path: 'storeAddressId',
+  reason: null,
+  valueType: 'Array'
+}
+[2022-07-08T17:06:29.670] [ERROR] vendorController - CastError: Cast to string failed for value "[]" (type Array) at path "storeAddressId"
+    at model.Query.exec (D:\shopping_tool\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\shopping_tool\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  messageFormat: undefined,
+  stringValue: '"[]"',
+  kind: 'string',
+  value: [],
+  path: 'storeAddressId',
+  reason: null,
+  valueType: 'Array'
+}
+[2022-07-08T17:06:40.252] [ERROR] vendorController - CastError: Cast to string failed for value "[]" (type Array) at path "storeAddressId"
+    at model.Query.exec (D:\shopping_tool\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (D:\shopping_tool\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  messageFormat: undefined,
+  stringValue: '"[]"',
+  kind: 'string',
+  value: [],
+  path: 'storeAddressId',
+  reason: null,
+  valueType: 'Array'
+}
+[2022-07-08T17:20:08.660] [ERROR] vendorController - MongoError: E11000 duplicate key error collection: syologic_shop_live.vendors index: email_1 dup key: { email: "ankitmovaliya@yahoo.com" }
+    at Function.create (D:\shopping_tool\node_modules\mongodb\lib\core\error.js:59:12)
+    at toError (D:\shopping_tool\node_modules\mongodb\lib\utils.js:130:22)
+    at D:\shopping_tool\node_modules\mongodb\lib\operations\common_functions.js:258:39
+    at handler (D:\shopping_tool\node_modules\mongodb\lib\core\sdam\topology.js:961:24)
+    at D:\shopping_tool\node_modules\mongodb\lib\cmap\connection_pool.js:352:13
+    at handleOperationResult (D:\shopping_tool\node_modules\mongodb\lib\core\sdam\server.js:567:5)
+    at MessageStream.messageHandler (D:\shopping_tool\node_modules\mongodb\lib\cmap\connection.js:308:5)
+    at MessageStream.emit (events.js:375:28)
+    at processIncomingData (D:\shopping_tool\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\shopping_tool\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at Socket.ondata (internal/streams/readable.js:726:22)
+    at Socket.emit (events.js:375:28)
+    at addChunk (internal/streams/readable.js:290:12)
+    at readableAddChunk (internal/streams/readable.js:265:9)
+    at Socket.Readable.push (internal/streams/readable.js:204:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:188:23) {
+  driver: true,
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'ankitmovaliya@yahoo.com' }
+}
+[2022-07-08T18:22:18.947] [ERROR] vendorController - MongoError: E11000 duplicate key error collection: syologic_shop_live.vendors index: email_1 dup key: { email: "ankitmovaliya@yahoo.com" }
+    at Function.create (D:\shopping_tool\node_modules\mongodb\lib\core\error.js:59:12)
+    at toError (D:\shopping_tool\node_modules\mongodb\lib\utils.js:130:22)
+    at D:\shopping_tool\node_modules\mongodb\lib\operations\common_functions.js:258:39
+    at handler (D:\shopping_tool\node_modules\mongodb\lib\core\sdam\topology.js:961:24)
+    at D:\shopping_tool\node_modules\mongodb\lib\cmap\connection_pool.js:352:13
+    at handleOperationResult (D:\shopping_tool\node_modules\mongodb\lib\core\sdam\server.js:567:5)
+    at MessageStream.messageHandler (D:\shopping_tool\node_modules\mongodb\lib\cmap\connection.js:308:5)
+    at MessageStream.emit (events.js:375:28)
+    at processIncomingData (D:\shopping_tool\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\shopping_tool\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at Socket.ondata (internal/streams/readable.js:726:22)
+    at Socket.emit (events.js:375:28)
+    at addChunk (internal/streams/readable.js:290:12)
+    at readableAddChunk (internal/streams/readable.js:265:9)
+    at Socket.Readable.push (internal/streams/readable.js:204:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:188:23) {
+  driver: true,
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'ankitmovaliya@yahoo.com' }
+}
